@@ -504,6 +504,10 @@ margin-right: 50px;
 }
 
 .emploee-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   fill: var(--icon-color);
 }
 
@@ -549,6 +553,20 @@ margin-right: 50px;
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
+}
+
+.customers-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--icon-color);
+  fill: var(--icon-color);
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--accent-color);
 }
 
 .customers-item:not(:first-child) {
