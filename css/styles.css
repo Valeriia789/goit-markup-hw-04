@@ -4,6 +4,7 @@
   --aditional-text-color: #ffffff;
   --accent-color: #2196f3;
   --section-background-color: #f5f4fa;
+  --icon-color: #AFB1B8;
 
   --font-main: Roboto, sans-serif;
   --logo-font: Raleway, sans-serif;
@@ -475,9 +476,11 @@ margin-right: 50px;
   justify-content: center;
 }
 
+/*
 .emploee-social-link a {
   color: var(--aditional-text-color);
 }
+*/
 
 .emploee-social-link {
   width: 44px;
@@ -491,10 +494,22 @@ margin-right: 50px;
   margin-top: 0px;
   margin-bottom: 24px;
 
-  color: var(--aditional-text-color);
-  background-color: var(--accent-color);
-  text-decoration-line: none;
+  color: var(--primary-text-color);
   border-radius: 200px;
+}
+
+.emploee-social-link:hover,
+.emploee-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.emploee-social-icon {
+  fill: var(--icon-color);
+}
+
+.emploee-social-icon:hover,
+.emploee-social-icon:focus {
+  fill: var(--aditional-text-color);
 }
 
 .emploee-social-link:not(:first-child) {
