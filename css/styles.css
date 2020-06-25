@@ -140,12 +140,46 @@ margin-right: 50px;
   padding-bottom: 32px;
 }
 
-.top-line-address {
+.address-items {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0px;
+
+  font-style: normal;
+  font-family: var(--primary-text-color);
 }
 
-.top-line-address .address-item + .address-item {
-  margin-left: 50px;
+.address-icon-envelope {
+  width: 16px;
+  height: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 10px;
+
+  background-position: center;
+  background-size: contain;
+
+}
+
+.address-icon-phone {
+  width: 10px;
+  height: 15px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.top-line-address {
+  display: flex;
 }
 
 .top-line-address .link {
@@ -560,7 +594,6 @@ margin-right: 50px;
   align-items: center;
   justify-content: center;
 
-  color: var(--icon-color);
   fill: var(--icon-color);
 }
 
