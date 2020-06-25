@@ -4,7 +4,7 @@
   --aditional-text-color: #ffffff;
   --accent-color: #2196f3;
   --section-background-color: #f5f4fa;
-  --icon-color: #AFB1B8;
+  --icon-color: #afb1b8;
 
   --font-main: Roboto, sans-serif;
   --logo-font: Raleway, sans-serif;
@@ -151,6 +151,7 @@ margin-right: 50px;
   font-family: var(--primary-text-color);
 }
 
+
 .address-icon-envelope {
   display: flex;
   align-items: center;
@@ -173,6 +174,11 @@ margin-right: 50px;
 }
 
 .top-line-address .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: var(--primary-text-color);
   color: var(--primary-text-color);
   text-decoration-line: none;
   font-style: normal;
@@ -180,6 +186,7 @@ margin-right: 50px;
 
 .top-line-address .link:hover,
 .top-line-address .link:focus {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -190,11 +197,8 @@ margin-right: 50px;
   max-width: 1600px;
   min-height: 600px;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ), url(../images/header.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url(../images/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,7 +224,6 @@ margin-right: 50px;
   padding-bottom: 200px;
   padding-left: 15px;
   padding-right: 15px;
-
 }
 
 .main-title {
@@ -303,7 +306,7 @@ margin-right: 50px;
   margin-bottom: 30px;
 
   border-radius: 4px;
-  content: "";
+  content: '';
   background-size: initial;
   background-repeat: no-repeat;
   background-position: center;
@@ -415,7 +418,7 @@ margin-right: 50px;
   padding-left: 215px;
   padding-right: 215px;
  */
- 
+
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -462,7 +465,8 @@ margin-right: 50px;
 
 .emploee-card:hover,
 .emploee-card:focus {
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-list .emploee-card + .emploee-card {
@@ -576,7 +580,7 @@ margin-right: 50px;
 
   box-sizing: border-box;
   border-radius: 4px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
 }
 
 .customers-icon {
@@ -750,6 +754,7 @@ footer {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
 
   padding: 10px 29px;
 
@@ -768,6 +773,16 @@ footer {
   letter-spacing: 0.06em;
 }
 
+.icon-send {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  margin-left: 10px;
+}
+
+/*
 .subscribe-button::after {
   content: "";
   width: 24px;
@@ -777,6 +792,7 @@ footer {
   background-image: url(../images/iconsend.png);
   background-size: contain;
 }
+*/
 
 .developers {
   width: 1200px;
@@ -885,7 +901,7 @@ footer {
   margin-bottom: 30px;
 
   box-sizing: border-box;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   background-color: white;
 }
 
@@ -902,7 +918,8 @@ footer {
 }
 
 .portfolio-card:hover {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-card-image {
