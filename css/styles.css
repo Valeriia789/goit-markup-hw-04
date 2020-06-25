@@ -151,7 +151,6 @@ margin-right: 50px;
   font-family: var(--primary-text-color);
 }
 
-
 .address-icon-envelope {
   display: flex;
   align-items: center;
@@ -296,6 +295,38 @@ margin-right: 50px;
   width: 270px;
 }
 
+.feachers-icon {
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  height: 120px;
+  width: 270px;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  border-radius: 4px;
+  background-position: center;
+  background-color: var(--section-background-color);
+}
+
+.feachers-svg {
+  width: 70px;
+  height: 70px;
+
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+/*
 .feachers-item::before {
   display: block;
 
@@ -328,6 +359,7 @@ margin-right: 50px;
 .icon-astronaut::before {
   background-image: url(../images/4astronaut.svg);
 }
+*/
 
 .features-title {
   margin-top: 0px;
@@ -768,6 +800,7 @@ footer {
   background-color: var(--accent-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 
   text-decoration: none;
   font-family: Roboto;
@@ -851,8 +884,10 @@ footer {
   justify-content: center;
   align-items: center;
 
+  margin-left: 8px;
   padding: 6px 22px;
 
+  cursor: pointer;
   border-radius: 4px;
   border: 1px;
   border-color: transparent;
@@ -873,10 +908,6 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--aditional-text-color);
   background-color: var(--accent-color);
-}
-
-.portfolio-button {
-  margin-left: 8px;
 }
 
 .portfolio-container {
