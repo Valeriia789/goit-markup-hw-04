@@ -122,6 +122,8 @@ margin-right: 50px;
 
   color: var(--title-text-color);
   text-decoration-line: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -137,6 +139,7 @@ margin-right: 50px;
 
   color: var(--accent-color);
   text-decoration-line: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-current::after {
@@ -618,6 +621,8 @@ margin-right: 50px;
 
   color: var(--primary-text-color);
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .emploee-social-link:hover,
@@ -637,6 +642,7 @@ margin-right: 50px;
 
   background-color: transparent;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .emploee-social-item:not(:first-child) {
@@ -678,6 +684,8 @@ margin-right: 50px;
   border: 1px solid #afb1b8;
 
   cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -696,6 +704,8 @@ margin-right: 50px;
   justify-content: center;
 
   fill: var(--icon-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item:not(:first-child) {
@@ -816,6 +826,8 @@ footer {
   text-decoration-line: none;
   border-radius: 200px;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-social-link:hover,
