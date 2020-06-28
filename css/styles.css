@@ -6,6 +6,7 @@
   --section-background-color: #f5f4fa;
   --icon-color: #afb1b8;
   --doings-bacground-color: rgba(47, 48, 58, 0.8);
+  --portfolio-bacground-color: rgba(33, 150, 243, 0.9);
 
   --font-main: Roboto, sans-serif;
   --logo-font: Raleway, sans-serif;
@@ -28,6 +29,8 @@ ul {
 }
 
 a {
+  margin: 0px;
+
   text-decoration-line: none;
   text-decoration: none;
   color: var(--aditional-text-color);
@@ -1022,8 +1025,66 @@ footer {
 }
 
 .portfolio-card-image {
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0px;
+}
+
+.image-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.portfolio-card-text {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  /* 
+  padding-top: 63px;
+  padding-bottom: 63px;
+  */
+
+  background-color: rgba(33, 150, 243, 0.9);
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+
+  transform: translateY(100%); /* сдвигает текст с фоном вниз фото на 100% */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.image-container:hover .portfolio-card-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-titles-container {
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  overflow: hidden;
 }
 
 .portfolio-title {
@@ -1040,8 +1101,7 @@ footer {
 }
 
 .portfolio-subtitle {
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0px;
 
   color: var(--primary-text-color);
   font-style: normal;
@@ -1049,17 +1109,6 @@ footer {
   font-size: 16px;
   line-height: 30px;
   /* identical to box height, or 187% */
-  letter-spacing: 0.03em;
-}
-
-.portfolio-text {
-  background-color: rgba(33, 150, 243, 0.9);
-  font-family: var(--font-main);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
   letter-spacing: 0.03em;
 }
 
